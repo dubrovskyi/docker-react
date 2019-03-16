@@ -1,0 +1,12 @@
+#helper file
+# the file is aimed to collect all tricky things which are important but trick
+
+
+docker run -p 3000:3000 -v /app/node_modules -$(pwd):/app 5f7c33f15a12
+
+# -v /app/node_modules - pay attention, there is no column :
+# it means, that we use only /app/node_modules withing container
+
+# -p 3000:3000 maps ports outside container with inside container
+# first 3000 says that we can access our container by port 3000
+# second one says that our application should have port 3000 to run outside
